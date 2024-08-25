@@ -7,76 +7,28 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Alan</copyright>
-        <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Css</title>
-        <link>https://example.com/tags/css/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        <lastBuildDate>Mon, 26 Aug 2024 01:31:39 +0800</lastBuildDate><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Draft</title>
+        <link>https://example.com/tags/draft/</link>
+        <pubDate>Mon, 26 Aug 2024 01:31:39 +0800</pubDate>
         
-        <guid>https://example.com/tags/css/</guid>
+        <guid>https://example.com/tags/draft/</guid>
         <description></description>
         </item>
         <item>
-        <title>Html</title>
-        <link>https://example.com/tags/html/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        <title>Note</title>
+        <link>https://example.com/tags/note/</link>
+        <pubDate>Mon, 26 Aug 2024 00:22:27 +0800</pubDate>
         
-        <guid>https://example.com/tags/html/</guid>
+        <guid>https://example.com/tags/note/</guid>
         <description></description>
         </item>
         <item>
-        <title>Markdown</title>
-        <link>https://example.com/tags/markdown/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        <title>Plan</title>
+        <link>https://example.com/tags/plan/</link>
+        <pubDate>Mon, 26 Aug 2024 00:22:27 +0800</pubDate>
         
-        <guid>https://example.com/tags/markdown/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Themes</title>
-        <link>https://example.com/tags/themes/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://example.com/tags/themes/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Privacy</title>
-        <link>https://example.com/tags/privacy/</link>
-        <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://example.com/tags/privacy/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Shortcodes</title>
-        <link>https://example.com/tags/shortcodes/</link>
-        <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://example.com/tags/shortcodes/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Tag With Whitespaces</title>
-        <link>https://example.com/tags/tag-with-whitespaces/</link>
-        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://example.com/tags/tag-with-whitespaces/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Text</title>
-        <link>https://example.com/tags/text/</link>
-        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://example.com/tags/text/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Emoji</title>
-        <link>https://example.com/tags/emoji/</link>
-        <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://example.com/tags/emoji/</guid>
+        <guid>https://example.com/tags/plan/</guid>
         <description></description>
         </item>
         

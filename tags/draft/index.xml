@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Draft on Alan&#39;s tiny world</title>
+        <link>https://example.com/tags/draft/</link>
+        <description>Recent content in Draft on Alan&#39;s tiny world</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>Alan</copyright>
+        <lastBuildDate>Mon, 26 Aug 2024 01:31:39 +0800</lastBuildDate><atom:link href="https://example.com/tags/draft/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>first plan</title>
+        <link>https://example.com/posts/content/post/24_8_26_plan/</link>
+        <pubDate>Mon, 26 Aug 2024 01:31:39 +0800</pubDate>
+        
+        <guid>https://example.com/posts/content/post/24_8_26_plan/</guid>
+        <description>&lt;h4 id=&#34;brief-introduce&#34;&gt;brief introduce
+&lt;/h4&gt;&lt;p&gt;简单的规划一下目前的几个事：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;网络原理的阅读，每天去读一丢丢，并且更新笔记上来&lt;/li&gt;
+&lt;li&gt;协程框架的编写，计划待定&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
