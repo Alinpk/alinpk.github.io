@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/posts/content/</loc>
-    <lastmod>2024-08-26T01:31:39+08:00</lastmod>
-  </url><url>
     <loc>https://example.com/</loc>
     <lastmod>2024-08-26T01:31:39+08:00</lastmod>
   </url><url>
@@ -14,13 +11,13 @@
     <loc>https://example.com/tags/draft/</loc>
     <lastmod>2024-08-26T01:31:39+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/content/post/24_8_26_plan/</loc>
+    <loc>https://example.com/p/first-plan/</loc>
     <lastmod>2024-08-26T01:31:39+08:00</lastmod>
   </url><url>
     <loc>https://example.com/categories/plan/</loc>
     <lastmod>2024-08-26T01:31:39+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/</loc>
+    <loc>https://example.com/post/</loc>
     <lastmod>2024-08-26T01:31:39+08:00</lastmod>
   </url><url>
     <loc>https://example.com/tags/</loc>
@@ -32,21 +29,24 @@
     <loc>https://example.com/tags/plan/</loc>
     <lastmod>2024-08-26T00:22:27+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/content/post/first_page/</loc>
+    <loc>https://example.com/p/%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/</loc>
     <lastmod>2024-08-26T00:22:27+08:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/content/page/archives/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/posts/content/page/about/</loc>
+    <loc>https://example.com/page/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/content/_index.zh-cn/</loc>
+    <loc>https://example.com/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/content/categories/test/</loc>
+    <loc>https://example.com/%E5%85%B3%E4%BA%8E/</loc>
+    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/content/page/search/</loc>
+    <loc>https://example.com/_index.zh-cn/</loc>
   </url><url>
-    <loc>https://example.com/posts/content/page/links/</loc>
+    <loc>https://example.com/categories/test/</loc>
+  </url><url>
+    <loc>https://example.com/search/</loc>
+  </url><url>
+    <loc>https://example.com/%E8%B5%84%E6%BA%90/</loc>
   </url>
 </urlset>
