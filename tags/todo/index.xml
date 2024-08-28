@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Alan&#39;s tiny world</title>
-        <link>https://example.com/</link>
-        <description>Recent content on Alan&#39;s tiny world</description>
+        <title>Todo on Alan&#39;s tiny world</title>
+        <link>https://example.com/tags/todo/</link>
+        <description>Recent content in Todo on Alan&#39;s tiny world</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Alan</copyright>
-        <lastBuildDate>Thu, 29 Aug 2024 01:55:16 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 29 Aug 2024 01:55:16 +0800</lastBuildDate><atom:link href="https://example.com/tags/todo/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>nfs introduce</title>
         <link>https://example.com/p/nfs-introduce/</link>
         <pubDate>Thu, 29 Aug 2024 01:55:16 +0800</pubDate>
@@ -101,67 +101,6 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        </item>
-        <item>
-        <title>first plan</title>
-        <link>https://example.com/p/first-plan/</link>
-        <pubDate>Mon, 26 Aug 2024 01:31:39 +0800</pubDate>
-        
-        <guid>https://example.com/p/first-plan/</guid>
-        <description>&lt;h1 id=&#34;brief-introduce&#34;&gt;brief introduce
-&lt;/h1&gt;&lt;p&gt;简单的规划一下目前的几个事：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;网络原理的阅读，每天去读一丢丢，并且更新笔记上来&lt;/li&gt;
-&lt;li&gt;协程框架的编写，计划待定&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-</description>
-        </item>
-        <item>
-        <title>归档</title>
-        <link>https://example.com/archives/</link>
-        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://example.com/archives/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>关于</title>
-        <link>https://example.com/%E5%85%B3%E4%BA%8E/</link>
-        <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://example.com/%E5%85%B3%E4%BA%8E/</guid>
-        <description>&lt;h3 id=&#34;introduce&#34;&gt;introduce
-&lt;/h3&gt;&lt;p&gt;终于开启我的博客历程，作为第一篇博文，虽然也可以用类似于&amp;quot;hello world&amp;quot;一类的开篇搪塞过去，但我还是想要好好的写一些内容，比如&lt;strong&gt;为什么要搞一个博客&lt;/strong&gt;，&lt;strong&gt;计划用博客记录些什么&lt;/strong&gt;之类的，以此来表示我是真的要认真去做这件事情的。&lt;/p&gt;
-&lt;h3 id=&#34;why&#34;&gt;why
-&lt;/h3&gt;&lt;p&gt;写博客的理由还是很多的，因为从开始想开一个自己的博客到实施已经过去了好久。起初是看到好多大佬都有自己的blog，那自己也搞一个，踏上强者之路！但那会儿网络是啥，github怎么登录八字都没一撇，也就没有跟下去了。再往后，自己在查阅学习的过程中，记录的方式总是有点凌乱，也没有好好的汇总在一起，有时候总会想着回过头看看自己都会些什么，结果发现回头了，但是都不知道要往哪里去查，这时候又想到了要是搞一个博客，随时随地去把自己的技能定期的更新一下，需要总结看看的时候也方便许多。还有就是，自己多少是有些分享欲的，但是又羞于拿一些浅薄的产出摆出去，这时候blog这种东西就有点合适了，反正也不署名，发出去之后不管有没有人看，总之我就是分享了，这就是我的成果！~~叉腰~~😏&lt;/p&gt;
-&lt;p&gt;因为想了好久，所以理由要罗列总是能写好长的，就目前来说，最重要的一点是，是希望能够通过博客去有规律的记录自己的生活，以此来改掉散漫的毛病。&lt;/p&gt;
-&lt;h3 id=&#34;what&#34;&gt;what
-&lt;/h3&gt;&lt;p&gt;博客要写的东西我预计是有几点&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;生活的碎碎&lt;/li&gt;
-&lt;li&gt;学习的记录&lt;/li&gt;
-&lt;li&gt;一些计划/安排/心愿一类的东西
-目前就大致想着这三个分类吧。也许实际上由于太懒了要删掉一个或是两个，也可能变更或是新增。总之答题就这样吧。&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        <item>
-        <title>检索</title>
-        <link>https://example.com/search/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://example.com/search/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>资源</title>
-        <link>https://example.com/%E8%B5%84%E6%BA%90/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://example.com/%E8%B5%84%E6%BA%90/</guid>
-        <description></description>
         </item>
         
     </channel>

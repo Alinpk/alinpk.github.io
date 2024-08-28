@@ -7,28 +7,28 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Alan</copyright>
-        <lastBuildDate>Mon, 26 Aug 2024 01:31:39 +0800</lastBuildDate><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 29 Aug 2024 01:55:16 +0800</lastBuildDate><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Distribute System</title>
+        <link>https://example.com/tags/distribute-system/</link>
+        <pubDate>Thu, 29 Aug 2024 01:55:16 +0800</pubDate>
+        
+        <guid>https://example.com/tags/distribute-system/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Todo</title>
+        <link>https://example.com/tags/todo/</link>
+        <pubDate>Thu, 29 Aug 2024 01:55:16 +0800</pubDate>
+        
+        <guid>https://example.com/tags/todo/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Draft</title>
         <link>https://example.com/tags/draft/</link>
         <pubDate>Mon, 26 Aug 2024 01:31:39 +0800</pubDate>
         
         <guid>https://example.com/tags/draft/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Note</title>
-        <link>https://example.com/tags/note/</link>
-        <pubDate>Mon, 26 Aug 2024 00:22:27 +0800</pubDate>
-        
-        <guid>https://example.com/tags/note/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Plan</title>
-        <link>https://example.com/tags/plan/</link>
-        <pubDate>Mon, 26 Aug 2024 00:22:27 +0800</pubDate>
-        
-        <guid>https://example.com/tags/plan/</guid>
         <description></description>
         </item>
         
