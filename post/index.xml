@@ -8,11 +8,11 @@
         <language>en</language>
         <copyright>Alan</copyright>
         <lastBuildDate>Thu, 29 Aug 2024 01:55:16 +0800</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>nfs introduce</title>
-        <link>https://example.com/p/nfs-introduce/</link>
+        <title>nfs</title>
+        <link>https://example.com/p/nfs/</link>
         <pubDate>Thu, 29 Aug 2024 01:55:16 +0800</pubDate>
         
-        <guid>https://example.com/p/nfs-introduce/</guid>
+        <guid>https://example.com/p/nfs/</guid>
         <description>&lt;h1 id=&#34;nfs&#34;&gt;NFS
 &lt;/h1&gt;&lt;h2 id=&#34;背景&#34;&gt;背景
 &lt;/h2&gt;&lt;p&gt;NFS（Network FileSystem）是在工作中搭建多机共享目录所使用的一个机制。在使用过程中，只是模糊的了解了一下其背后的机制，如果后续有继续学习的话，则会基于当前内容加以跟新完善。&lt;/p&gt;
