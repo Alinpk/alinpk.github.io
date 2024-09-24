@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="">
-<title>资源</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="working note __stdcall 1.definition\n__stdcall 调用约定用于调用 Win32 API 函数。 被调用方将清理堆栈，以便让编译器生成 vararg 函数 __cdecl。 使用此调用约定的函数需要一个函数原型。 __stdcall 修饰符是 Microsoft 专用的。\n2.why\n传统上的约定应该是`__cdecl`，这个约定是函数传递的参数，应该由调用方去清理，从汇编角度看，类似于：\n```x86asm /* example of __cdecl */ push arg1 push arg2 push arg3 call function add esp,12 ; effectively \"pop; pop; pop\" ```">
+<title>note</title>
 
-<link rel='canonical' href='https://example.com/%E8%B5%84%E6%BA%90/'>
+<link rel='canonical' href='https://example.com/p/note/'>
 
-<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="资源">
-<meta property='og:description' content="">
-<meta property='og:url' content='https://example.com/%E8%B5%84%E6%BA%90/'>
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="note">
+<meta property='og:description' content="working note __stdcall 1.definition\n__stdcall 调用约定用于调用 Win32 API 函数。 被调用方将清理堆栈，以便让编译器生成 vararg 函数 __cdecl。 使用此调用约定的函数需要一个函数原型。 __stdcall 修饰符是 Microsoft 专用的。\n2.why\n传统上的约定应该是`__cdecl`，这个约定是函数传递的参数，应该由调用方去清理，从汇编角度看，类似于：\n```x86asm /* example of __cdecl */ push arg1 push arg2 push arg3 call function add esp,12 ; effectively \"pop; pop; pop\" ```">
+<meta property='og:url' content='https://example.com/p/note/'>
 <meta property='og:site_name' content='Alan&#39;s tiny world'>
-<meta property='og:type' content='article'><meta property='article:section' content='Page' />
-<meta name="twitter:title" content="资源">
-<meta name="twitter:description" content="">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='draft' />
+<meta name="twitter:title" content="note">
+<meta name="twitter:description" content="working note __stdcall 1.definition\n__stdcall 调用约定用于调用 Win32 API 函数。 被调用方将清理堆栈，以便让编译器生成 vararg 函数 __cdecl。 使用此调用约定的函数需要一个函数原型。 __stdcall 修饰符是 Microsoft 专用的。\n2.why\n传统上的约定应该是`__cdecl`，这个约定是函数传递的参数，应该由调用方去清理，从汇编角度看，类似于：\n```x86asm /* example of __cdecl */ push arg1 push arg2 push arg3 call function add esp,12 ; effectively \"pop; pop; pop\" ```">
     <link rel="shortcut icon" href="/feather.ico" />
 
     </head>
@@ -178,7 +178,7 @@
         </li>
         
         
-        <li  class='current' >
+        <li >
             <a href='/%E8%B5%84%E6%BA%90/' >
                 
                 
@@ -225,7 +225,46 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#working-note">working note</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#__stdcall">__stdcall</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="main-article">
@@ -233,10 +272,18 @@
 
     <div class="article-details">
     
+    <header class="article-category">
+        
+            <a href="/categories/unarchives/" >
+                Unarchives
+            </a>
+        
+    </header>
+    
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/%E8%B5%84%E6%BA%90/">资源</a>
+            <a href="/p/note/">note</a>
         </h2>
     
         
@@ -255,12 +302,34 @@
     <section class="article-content">
     
     
-    
+    <h2 id="working-note">working note
+</h2><h4 id="__stdcall">__stdcall
+</h4><p>1.definition</p>
+<blockquote>
+<p>__stdcall 调用约定用于调用 Win32 API 函数。 被调用方将清理堆栈，以便让编译器生成 vararg 函数 __cdecl。 使用此调用约定的函数需要一个函数原型。 __stdcall 修饰符是 Microsoft 专用的。</p>
+</blockquote>
+<p>2.why</p>
+ <p>传统上的约定应该是`__cdecl`，这个约定是函数传递的参数，应该由调用方去清理，从汇编角度看，类似于：</p>
+```x86asm
+/* example of __cdecl */
+push arg1
+push arg2
+push arg3
+call function
+add esp,12    ; effectively "pop; pop; pop"
+```
+
 </section>
 
 
     <footer class="article-footer">
     
+    <section class="article-tags">
+        
+            <a href="/tags/draft/">Draft</a>
+        
+    </section>
+
 
     </footer>
 
@@ -269,37 +338,12 @@
 </article>
 
     
-        <div class="article-list--compact links">
-    
-        <article>
-            <a href="https://gist.github.com/rxaviers/7360908" target="_blank" rel="noopener">
-                <div class="article-details">
-                    <h2 class="article-title">Emoj</h2>
-                    <footer class="article-time">
-                        
-                            A site which containes some emoj can insert into markdown file.
-                        
-                    </footer>
-                </div>
-        
-                
-                    
-                    
-                        
-                    
-                    <div class="article-image">
-                        <img src="/%E8%B5%84%E6%BA%90/emoj.jfif" loading="lazy">
-                    </div>
-                
-            </a>
-        </article>
-    
-</div>
-    
 
     
 
      
+    
+        
     
 
     <footer class="site-footer">

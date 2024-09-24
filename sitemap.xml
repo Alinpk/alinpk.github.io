@@ -41,7 +41,11 @@
     <loc>https://example.com/%E5%85%B3%E4%BA%8E/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://example.com/p/note/</loc>
+  </url><url>
     <loc>https://example.com/categories/test/</loc>
+  </url><url>
+    <loc>https://example.com/categories/unarchives/</loc>
   </url><url>
     <loc>https://example.com/search/</loc>
   </url><url>

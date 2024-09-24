@@ -111,8 +111,10 @@
 &lt;/h1&gt;&lt;p&gt;简单的规划一下目前的几个事：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ol&gt;
-&lt;li&gt;网络原理的阅读，每天去读一丢丢，并且更新笔记上来&lt;/li&gt;
+&lt;li&gt;网络技术内幕&lt;/li&gt;
 &lt;li&gt;协程框架的编写，计划待定&lt;/li&gt;
+&lt;li&gt;部署一个gitlab&lt;/li&gt;
+&lt;li&gt;看看jeckins怎么结合到gitlab上&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/blockquote&gt;
 </description>
@@ -143,6 +145,30 @@
 - 学习的记录
 - 一些计划/安排/心愿一类的东西
 目前就大致想着这三个分类吧。也许实际上由于太懒了要删掉一个或是两个，也可能变更或是新增。总之答题就这样吧。
+</description>
+        </item>
+        <item>
+        <title>note</title>
+        <link>https://example.com/p/note/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/p/note/</guid>
+        <description>&lt;h2 id=&#34;working-note&#34;&gt;working note
+&lt;/h2&gt;&lt;h4 id=&#34;__stdcall&#34;&gt;__stdcall
+&lt;/h4&gt;&lt;p&gt;1.definition&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;__stdcall 调用约定用于调用 Win32 API 函数。 被调用方将清理堆栈，以便让编译器生成 vararg 函数 __cdecl。 使用此调用约定的函数需要一个函数原型。 __stdcall 修饰符是 Microsoft 专用的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2.why&lt;/p&gt;
+ &lt;p&gt;传统上的约定应该是`__cdecl`，这个约定是函数传递的参数，应该由调用方去清理，从汇编角度看，类似于：&lt;/p&gt;
+```x86asm
+/* example of __cdecl */
+push arg1
+push arg2
+push arg3
+call function
+add esp,12    ; effectively &#34;pop; pop; pop&#34;
+```
 </description>
         </item>
         <item>
