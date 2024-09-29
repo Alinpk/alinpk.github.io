@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="working note __stdcall 1.definition\n__stdcall 调用约定用于调用 Win32 API 函数。 被调用方将清理堆栈，以便让编译器生成 vararg 函数 __cdecl。 使用此调用约定的函数需要一个函数原型。 __stdcall 修饰符是 Microsoft 专用的。\n2.why\n传统上的约定应该是`__cdecl`，这个约定是函数传递的参数，应该由调用方去清理，从汇编角度看，类似于：\n```x86asm /* example of __cdecl */ push arg1 push arg2 push arg3 call function add esp,12 ; effectively \"pop; pop; pop\" ```">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="working note __stdcall 1.definition\n__stdcall 调用约定用于调用 Win32 API 函数。 被调用方将清理堆栈，以便让编译器生成 vararg 函数 __cdecl。 使用此调用约定的函数需要一个函数原型。 __stdcall 修饰符是 Microsoft 专用的。\n2.why\n先感受一下两种风格的效果\n传统上的约定应该是__cdecl，这个约定是函数传递的参数，应该由调用方去清理，从汇编角度看，类似于：\n1 2 3 4 5 6 /* example of __cdecl */ push arg1 push arg2 push arg3 call function add esp,12 ; effectively &#34;pop; pop; pop&#34; __stdcall的约定风格是在Win32 API函数的标准约定，做法如下:\n1 2 3 4 5 /* example of __stdcall */ push arg1 push arg2 push arg3 call function // no stack cleanup - callee does this 这样就有比较只管的感受了，从汇编码的角度来说，__stdcall把清理的职责归属到了callee，这样在大型项目中，可能会编译出更小的可执行程序。 另一方面，如果使用过C风格的变长参数便可以，虽然我们在语义层面上可以用类似于argc,argv的模式去明确参数的数量规则，但编译器层面去统一的约束这点是很困难的，所以__stdcall是不支持这种风格的边长参数的。\n">
 <title>note</title>
 
 <link rel='canonical' href='https://example.com/p/note/'>
 
 <link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="note">
-<meta property='og:description' content="working note __stdcall 1.definition\n__stdcall 调用约定用于调用 Win32 API 函数。 被调用方将清理堆栈，以便让编译器生成 vararg 函数 __cdecl。 使用此调用约定的函数需要一个函数原型。 __stdcall 修饰符是 Microsoft 专用的。\n2.why\n传统上的约定应该是`__cdecl`，这个约定是函数传递的参数，应该由调用方去清理，从汇编角度看，类似于：\n```x86asm /* example of __cdecl */ push arg1 push arg2 push arg3 call function add esp,12 ; effectively \"pop; pop; pop\" ```">
+<meta property='og:description' content="working note __stdcall 1.definition\n__stdcall 调用约定用于调用 Win32 API 函数。 被调用方将清理堆栈，以便让编译器生成 vararg 函数 __cdecl。 使用此调用约定的函数需要一个函数原型。 __stdcall 修饰符是 Microsoft 专用的。\n2.why\n先感受一下两种风格的效果\n传统上的约定应该是__cdecl，这个约定是函数传递的参数，应该由调用方去清理，从汇编角度看，类似于：\n1 2 3 4 5 6 /* example of __cdecl */ push arg1 push arg2 push arg3 call function add esp,12 ; effectively &#34;pop; pop; pop&#34; __stdcall的约定风格是在Win32 API函数的标准约定，做法如下:\n1 2 3 4 5 /* example of __stdcall */ push arg1 push arg2 push arg3 call function // no stack cleanup - callee does this 这样就有比较只管的感受了，从汇编码的角度来说，__stdcall把清理的职责归属到了callee，这样在大型项目中，可能会编译出更小的可执行程序。 另一方面，如果使用过C风格的变长参数便可以，虽然我们在语义层面上可以用类似于argc,argv的模式去明确参数的数量规则，但编译器层面去统一的约束这点是很困难的，所以__stdcall是不支持这种风格的边长参数的。\n">
 <meta property='og:url' content='https://example.com/p/note/'>
 <meta property='og:site_name' content='Alan&#39;s tiny world'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='draft' />
 <meta name="twitter:title" content="note">
-<meta name="twitter:description" content="working note __stdcall 1.definition\n__stdcall 调用约定用于调用 Win32 API 函数。 被调用方将清理堆栈，以便让编译器生成 vararg 函数 __cdecl。 使用此调用约定的函数需要一个函数原型。 __stdcall 修饰符是 Microsoft 专用的。\n2.why\n传统上的约定应该是`__cdecl`，这个约定是函数传递的参数，应该由调用方去清理，从汇编角度看，类似于：\n```x86asm /* example of __cdecl */ push arg1 push arg2 push arg3 call function add esp,12 ; effectively \"pop; pop; pop\" ```">
+<meta name="twitter:description" content="working note __stdcall 1.definition\n__stdcall 调用约定用于调用 Win32 API 函数。 被调用方将清理堆栈，以便让编译器生成 vararg 函数 __cdecl。 使用此调用约定的函数需要一个函数原型。 __stdcall 修饰符是 Microsoft 专用的。\n2.why\n先感受一下两种风格的效果\n传统上的约定应该是__cdecl，这个约定是函数传递的参数，应该由调用方去清理，从汇编角度看，类似于：\n1 2 3 4 5 6 /* example of __cdecl */ push arg1 push arg2 push arg3 call function add esp,12 ; effectively &#34;pop; pop; pop&#34; __stdcall的约定风格是在Win32 API函数的标准约定，做法如下:\n1 2 3 4 5 /* example of __stdcall */ push arg1 push arg2 push arg3 call function // no stack cleanup - callee does this 这样就有比较只管的感受了，从汇编码的角度来说，__stdcall把清理的职责归属到了callee，这样在大型项目中，可能会编译出更小的可执行程序。 另一方面，如果使用过C风格的变长参数便可以，虽然我们在语义层面上可以用类似于argc,argv的模式去明确参数的数量规则，但编译器层面去统一的约束这点是很困难的，所以__stdcall是不支持这种风格的边长参数的。\n">
     <link rel="shortcut icon" href="/feather.ico" />
 
     </head>
@@ -252,6 +252,7 @@
         <li>
           <ol>
             <li><a href="#__stdcall">__stdcall</a></li>
+            <li><a href="#__attribute__"><strong>attribute</strong></a></li>
           </ol>
         </li>
       </ol>
@@ -309,16 +310,61 @@
 <p>__stdcall 调用约定用于调用 Win32 API 函数。 被调用方将清理堆栈，以便让编译器生成 vararg 函数 __cdecl。 使用此调用约定的函数需要一个函数原型。 __stdcall 修饰符是 Microsoft 专用的。</p>
 </blockquote>
 <p>2.why</p>
- <p>传统上的约定应该是`__cdecl`，这个约定是函数传递的参数，应该由调用方去清理，从汇编角度看，类似于：</p>
-```x86asm
-/* example of __cdecl */
-push arg1
-push arg2
-push arg3
-call function
-add esp,12    ; effectively "pop; pop; pop"
-```
-
+<blockquote>
+<p>先感受一下两种风格的效果</p>
+</blockquote>
+ <p>传统上的约定应该是__cdecl，这个约定是函数传递的参数，应该由调用方去清理，从汇编角度看，类似于：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/* example of __cdecl */
+</span></span><span class="line"><span class="cl">push arg1
+</span></span><span class="line"><span class="cl">push arg2
+</span></span><span class="line"><span class="cl">push arg3
+</span></span><span class="line"><span class="cl">call function
+</span></span><span class="line"><span class="cl">add esp,12    ; effectively &#34;pop; pop; pop&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div> <p>__stdcall的约定风格是在Win32 API函数的标准约定，做法如下:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/* example of __stdcall */
+</span></span><span class="line"><span class="cl">push arg1 
+</span></span><span class="line"><span class="cl">push arg2 
+</span></span><span class="line"><span class="cl">push arg3 
+</span></span><span class="line"><span class="cl">call function // no stack cleanup - callee does this
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>这样就有比较只管的感受了，从汇编码的角度来说，__stdcall把清理的职责归属到了callee，这样在大型项目中，可能会编译出更小的可执行程序。 另一方面，如果使用过C风格的变长参数便可以，虽然我们在语义层面上可以用类似于<code>argc</code>,<code>argv</code>的模式去明确参数的数量规则，但编译器层面去统一的约束这点是很困难的，所以__stdcall是不支持这种风格的边长参数的。</p>
+</blockquote>
+<p><br>这里给出win32流行的一些调用约定（实际跨平台项目我们一般会在非win环境定义对应的空白宏</p>
+<ul>
+<li>__stdcall, 以相反的顺序（从右到左）将参数压入堆栈</li>
+<li>__cdecl, 以相反的顺序（从右到左）将参数压入堆栈</li>
+<li>__clrcall, 按顺序（从左到右）将参数加载到 CLR 表达式堆栈中。</li>
+<li>__fastcall, 存储在寄存器中，然后压入堆栈</li>
+<li>__thiscall, 入栈；此指针存储在 ECX 中</li>
+</ul>
+<h4 id="__attribute__"><strong>attribute</strong>
+</h4><ol>
+<li>visibility(default)</li>
+</ol>
+<p>可以用来定义一些符号是不是可见，可以用来发布api</p>
 </section>
 
 
