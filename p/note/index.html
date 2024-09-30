@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="working note __stdcall 1.definition\n__stdcall 调用约定用于调用 Win32 API 函数。 被调用方将清理堆栈，以便让编译器生成 vararg 函数 __cdecl。 使用此调用约定的函数需要一个函数原型。 __stdcall 修饰符是 Microsoft 专用的。\n2.why\n先感受一下两种风格的效果\n传统上的约定应该是__cdecl，这个约定是函数传递的参数，应该由调用方去清理，从汇编角度看，类似于：\n1 2 3 4 5 6 /* example of __cdecl */ push arg1 push arg2 push arg3 call function add esp,12 ; effectively &#34;pop; pop; pop&#34; __stdcall的约定风格是在Win32 API函数的标准约定，做法如下:\n1 2 3 4 5 /* example of __stdcall */ push arg1 push arg2 push arg3 call function // no stack cleanup - callee does this 这样就有比较只管的感受了，从汇编码的角度来说，__stdcall把清理的职责归属到了callee，这样在大型项目中，可能会编译出更小的可执行程序。 另一方面，如果使用过C风格的变长参数便可以，虽然我们在语义层面上可以用类似于argc,argv的模式去明确参数的数量规则，但编译器层面去统一的约束这点是很困难的，所以__stdcall是不支持这种风格的边长参数的。\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" title: &ldquo;note&rdquo; draft: true categories: - unarchives tags: - draft image container repository\nimage 那么镜像到底是什么呢？Docker 镜像可以看作是一个特殊的文件系统，除了提供容器运行时所需的程序、库、资源、配置等文件外，还包含了一些为运行时准备的一些配置参数（如匿名卷、环境变量、用户等）\nContainer（容器） 容器（Container）的定义和镜像（Image）几乎一模一样，也是一堆层的统一视角，唯一区别在于容器的最上面那一层是可读可写的。\nRepository（仓库） Docker 仓库是集中存放镜像文件的场所。镜像构建完成后，可以很容易的在当前宿主上运行。但是， 如果需要在其他服务器上使用这个镜像，我们就需要一个集中的存储、分发镜像的服务，Docker Registry（仓库注册服务器）就是这样的服务。有时候会把仓库（Repository）和仓库注册服务器（Registry）混为一谈，并不严格区分。\n仓库又可以分为两种形式：Public（公有仓库）Private（私有仓库）Docker Registry 公有仓库是开放给用户使用、允许用户管理镜像的 Registry 服务。一般这类公开服务允许用户免费上传、下载公开的镜像，并可能提供收费服务供用户管理私有镜像。除了使用公开服务外，用户还可以在本地搭建私有 Docker Registry。Docker 官方提供了 Docker Registry 镜像，可以直接使用做为私有 Registry 服务。\narchitecture ">
 <title>note</title>
 
 <link rel='canonical' href='https://example.com/p/note/'>
 
 <link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="note">
-<meta property='og:description' content="working note __stdcall 1.definition\n__stdcall 调用约定用于调用 Win32 API 函数。 被调用方将清理堆栈，以便让编译器生成 vararg 函数 __cdecl。 使用此调用约定的函数需要一个函数原型。 __stdcall 修饰符是 Microsoft 专用的。\n2.why\n先感受一下两种风格的效果\n传统上的约定应该是__cdecl，这个约定是函数传递的参数，应该由调用方去清理，从汇编角度看，类似于：\n1 2 3 4 5 6 /* example of __cdecl */ push arg1 push arg2 push arg3 call function add esp,12 ; effectively &#34;pop; pop; pop&#34; __stdcall的约定风格是在Win32 API函数的标准约定，做法如下:\n1 2 3 4 5 /* example of __stdcall */ push arg1 push arg2 push arg3 call function // no stack cleanup - callee does this 这样就有比较只管的感受了，从汇编码的角度来说，__stdcall把清理的职责归属到了callee，这样在大型项目中，可能会编译出更小的可执行程序。 另一方面，如果使用过C风格的变长参数便可以，虽然我们在语义层面上可以用类似于argc,argv的模式去明确参数的数量规则，但编译器层面去统一的约束这点是很困难的，所以__stdcall是不支持这种风格的边长参数的。\n">
+<meta property='og:description' content=" title: &ldquo;note&rdquo; draft: true categories: - unarchives tags: - draft image container repository\nimage 那么镜像到底是什么呢？Docker 镜像可以看作是一个特殊的文件系统，除了提供容器运行时所需的程序、库、资源、配置等文件外，还包含了一些为运行时准备的一些配置参数（如匿名卷、环境变量、用户等）\nContainer（容器） 容器（Container）的定义和镜像（Image）几乎一模一样，也是一堆层的统一视角，唯一区别在于容器的最上面那一层是可读可写的。\nRepository（仓库） Docker 仓库是集中存放镜像文件的场所。镜像构建完成后，可以很容易的在当前宿主上运行。但是， 如果需要在其他服务器上使用这个镜像，我们就需要一个集中的存储、分发镜像的服务，Docker Registry（仓库注册服务器）就是这样的服务。有时候会把仓库（Repository）和仓库注册服务器（Registry）混为一谈，并不严格区分。\n仓库又可以分为两种形式：Public（公有仓库）Private（私有仓库）Docker Registry 公有仓库是开放给用户使用、允许用户管理镜像的 Registry 服务。一般这类公开服务允许用户免费上传、下载公开的镜像，并可能提供收费服务供用户管理私有镜像。除了使用公开服务外，用户还可以在本地搭建私有 Docker Registry。Docker 官方提供了 Docker Registry 镜像，可以直接使用做为私有 Registry 服务。\narchitecture ">
 <meta property='og:url' content='https://example.com/p/note/'>
 <meta property='og:site_name' content='Alan&#39;s tiny world'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='draft' />
 <meta name="twitter:title" content="note">
-<meta name="twitter:description" content="working note __stdcall 1.definition\n__stdcall 调用约定用于调用 Win32 API 函数。 被调用方将清理堆栈，以便让编译器生成 vararg 函数 __cdecl。 使用此调用约定的函数需要一个函数原型。 __stdcall 修饰符是 Microsoft 专用的。\n2.why\n先感受一下两种风格的效果\n传统上的约定应该是__cdecl，这个约定是函数传递的参数，应该由调用方去清理，从汇编角度看，类似于：\n1 2 3 4 5 6 /* example of __cdecl */ push arg1 push arg2 push arg3 call function add esp,12 ; effectively &#34;pop; pop; pop&#34; __stdcall的约定风格是在Win32 API函数的标准约定，做法如下:\n1 2 3 4 5 /* example of __stdcall */ push arg1 push arg2 push arg3 call function // no stack cleanup - callee does this 这样就有比较只管的感受了，从汇编码的角度来说，__stdcall把清理的职责归属到了callee，这样在大型项目中，可能会编译出更小的可执行程序。 另一方面，如果使用过C风格的变长参数便可以，虽然我们在语义层面上可以用类似于argc,argv的模式去明确参数的数量规则，但编译器层面去统一的约束这点是很困难的，所以__stdcall是不支持这种风格的边长参数的。\n">
+<meta name="twitter:description" content=" title: &ldquo;note&rdquo; draft: true categories: - unarchives tags: - draft image container repository\nimage 那么镜像到底是什么呢？Docker 镜像可以看作是一个特殊的文件系统，除了提供容器运行时所需的程序、库、资源、配置等文件外，还包含了一些为运行时准备的一些配置参数（如匿名卷、环境变量、用户等）\nContainer（容器） 容器（Container）的定义和镜像（Image）几乎一模一样，也是一堆层的统一视角，唯一区别在于容器的最上面那一层是可读可写的。\nRepository（仓库） Docker 仓库是集中存放镜像文件的场所。镜像构建完成后，可以很容易的在当前宿主上运行。但是， 如果需要在其他服务器上使用这个镜像，我们就需要一个集中的存储、分发镜像的服务，Docker Registry（仓库注册服务器）就是这样的服务。有时候会把仓库（Repository）和仓库注册服务器（Registry）混为一谈，并不严格区分。\n仓库又可以分为两种形式：Public（公有仓库）Private（私有仓库）Docker Registry 公有仓库是开放给用户使用、允许用户管理镜像的 Registry 服务。一般这类公开服务允许用户免费上传、下载公开的镜像，并可能提供收费服务供用户管理私有镜像。除了使用公开服务外，用户还可以在本地搭建私有 Docker Registry。Docker 官方提供了 Docker Registry 镜像，可以直接使用做为私有 Registry 服务。\narchitecture ">
     <link rel="shortcut icon" href="/feather.ico" />
 
     </head>
@@ -386,6 +386,41 @@
     
 
     
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/note/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">note</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/note/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">note</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
 
      
     
