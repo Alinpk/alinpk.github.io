@@ -131,13 +131,7 @@ jonasmr/microprofile&lt;/p&gt;
         
         <guid>https://example.com/p/note/</guid>
         <description>&lt;hr&gt;
-&lt;h2 id=&#34;--draft&#34;&gt;title: &amp;ldquo;note&amp;rdquo;
-draft: true
-categories:
-- unarchives
-tags:
-- draft
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://example.com/p/note/image.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://example.com/p/note/image.png&#34;
 	width=&#34;623&#34;
 	height=&#34;485&#34;
 	srcset=&#34;https://example.com/p/note/image_hu6425087560643260289.png 480w, https://example.com/p/note/image_hu6471641475824586964.png 1024w&#34;
@@ -271,6 +265,26 @@ Docker Daemon 可以认为是通过 Docker Server 模块接受 Docker Client 的
 		data-flex-basis=&#34;311px&#34;
 	
 &gt;&lt;/p&gt;
+&lt;p&gt;运行过程的作用有以下几种可能：&lt;/p&gt;
+&lt;p&gt;向 Docker Registry 获取镜像。
+通过 GraphDriver 执行容器镜像的本地化操作。
+通过 NetworkDriver 执行容器网络环境的配置。
+通过 ExecDriver 执行容器内部运行的执行工作。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://example.com/p/note/image-7.png&#34;
+	width=&#34;673&#34;
+	height=&#34;817&#34;
+	srcset=&#34;https://example.com/p/note/image-7_hu17690913522464185546.png 480w, https://example.com/p/note/image-7_hu4381437563304940313.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;82&#34;
+		data-flex-basis=&#34;197px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;链接：https://zhuanlan.zhihu.com/p/600034612&lt;/p&gt;
 </description>
         </item>
         <item>
