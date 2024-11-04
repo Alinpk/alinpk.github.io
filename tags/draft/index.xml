@@ -36,8 +36,7 @@ jonasmr/microprofile&lt;/p&gt;
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://example.com/p/note/</guid>
-        <description>&lt;hr&gt;
-&lt;p&gt;&lt;img src=&#34;https://example.com/p/note/image.png&#34;
+        <description>&lt;p&gt;&lt;img src=&#34;https://example.com/p/note/image.png&#34;
 	width=&#34;623&#34;
 	height=&#34;485&#34;
 	srcset=&#34;https://example.com/p/note/image_hu6425087560643260289.png 480w, https://example.com/p/note/image_hu6471641475824586964.png 1024w&#34;
